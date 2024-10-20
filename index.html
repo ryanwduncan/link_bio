@@ -7,11 +7,13 @@
   <title>Ryan Duncan - Links</title>
   <link href="./styles.css" rel="stylesheet">
 
-  <script src="/scripts/p5.min.js"></script>
-  <script src="/scripts/vanta.topology.min.js"></script>
+  <!-- <script src="/scripts/p5.min.js"></script>
+  <script src="/scripts/vanta.topology.min.js"></script> -->
+  <script src="/scripts/three.min.js"></script>
+  <script src="/scripts/vanta.globe.min.js"></script>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
-      VANTA.TOPOLOGY({
+      VANTA.GLOBE({
         el: "#vanta",
         mouseControls: true,
         touchControls: true,
@@ -20,7 +22,9 @@
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0x9b462c
+        color: 0x2ba1e3,
+        size: 1.00,
+        backgroundColor: 0xe4e2f2
       })
     })
   </script>
@@ -41,21 +45,21 @@
         </a>
       </li>
       <li>
-        <a href="" target="_blank" rel="noreferrer">
-          <img src="./images/youtube.svg" alt="YouTube">
-          YouTube
-        </a>
-      </li>
-      <li>
-        <a href="" target="_blank" rel="noreferrer">
-          <img src="./images/twitter.svg" alt="Twitter">
-          Twitter
-        </a>
-      </li>
-      <li>
         <a href="https://github.com/ryanwduncan" target="_blank" rel="noreferrer">
           <img src="./images/github.svg" alt="GitHub">
           GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://soundcloud.com/gypsyeyesdream" target="_blank" rel="noreferrer">
+          <img src="./images/soundcloud.svg" alt="SoundCloud">
+          SoundCloud
+        </a>
+      </li>
+      <li>
+        <a href="" target="_blank" rel="noreferrer">
+          <img src="./images/youtube.svg" alt="YouTube">
+          YouTube
         </a>
       </li>
     </ul>
