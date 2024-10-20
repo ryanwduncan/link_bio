@@ -9,6 +9,7 @@
 
   <script src="/scripts/three.min.js"></script>
   <script src="/scripts/vanta.globe.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       VANTA.GLOBE({
@@ -24,8 +25,20 @@
         size: 1.00,
         backgroundColor: 0xe4e2f2
       })
+    });
+  </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      var typed = new Typed('#name', {
+        strings: ['Hello', 'Thanks for stopping by :)', 'Ryan Duncan'],
+        typeSpeed: 90,
+        showCursor: false,
+        fadeOut: true,
+        loop: false
+      });
     })
   </script>
+  </body>
 </head>
 
 <body>
@@ -33,11 +46,11 @@
   <main>
     <header>
       <img src="./images/ryan_birthday_2024.JPG" alt="Ryan at birthday party">
-      <h1>Ryan Duncan</h1>
+      <span id="name"></span>
     </header>
     <ul>
       <li>
-        <a href="" target="_blank" rel="noreferrer">
+        <a href="" target=" _blank" rel="noreferrer">
           <img src="./images/website_logo.png" alt="homepage">
           Official Website
         </a>
